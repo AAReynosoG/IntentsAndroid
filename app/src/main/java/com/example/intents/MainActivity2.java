@@ -27,8 +27,13 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view){
 
-        Intent i;
-        Intent i2;
-
+        if(view.getId() == R.id.be1){
+            Intent i = new Intent(this, MainActivity3.class);
+            startActivity(i);
+        } else if (view.getId() == R.id.be2) {
+            Intent i2 = new Intent(this, MainActivity.class);
+            startActivity(i2);
+        }
+        //MVVM Modelo Vista Vista Modelo
     }
 }
